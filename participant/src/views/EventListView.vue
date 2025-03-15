@@ -2,12 +2,12 @@
 import EventCard from '@/components/EventCard.vue'
 import eventService from '@/services/EventService'
 import { ref } from 'vue'
-import type { Event } from '@/types'
-const events = ref<Event[]>([])
+import type { Participant } from '@/types'
+const events = ref<Participant[]>([])
   interface EventResponse {
- data: Event[]
+ data: Participantt[]
 }
-eventService.getEvents().then((response:EventRespose) => {
+eventService.getEvents().then((response:ParticipantRespose) => {
  events.value = response.data
 })
 </script>

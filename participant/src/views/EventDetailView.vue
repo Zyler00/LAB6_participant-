@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import type { Event } from '@/types'
-const event = ref<Event>()
+import type { Participant } from '@/types'
+const event = ref<Participant>()
 </script>
 <template>
  <div>

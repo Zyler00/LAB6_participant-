@@ -1,9 +1,13 @@
 <script setup lang="ts"></script>
 
 <template>
- <div class="event-card">
- <h1>This is an event page</h1>
- </div>
+ <RouterLink to="participant">
+<div class="event-card">
+<h2>{{ event.name }}</h2>
+<p>{{ event.events }}</p>
+<span>{{ event.email }}</span>
+</div>
+</RouterLink>
 </template>
 
 <style scoped>
